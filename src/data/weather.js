@@ -28,3 +28,35 @@ const WEATHER_DATA = {
 export const AVAILABLE_CITY = Object.values(WEATHER_DATA).map(
     (city)=> city.city_name,
     );
+
+export const getWeather = (city) => {
+  const key = city.trim().toLowerCase();
+
+  return WEATHER_DATA[key];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
